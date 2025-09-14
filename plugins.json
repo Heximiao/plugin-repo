@@ -190,6 +190,10 @@
   {
     "id": "trustnight.epic_free_plugin-MaiMBot",
     "repositoryUrl": "https://github.com/trustnight/epic_free_plugin-MaiMBot"
+  },
+  {
+    "id": "Heximiao.diary_plugin",
+    "repositoryUrl": "https://github.com/Heximiao/diary_plugin"
   }
 ]
 
