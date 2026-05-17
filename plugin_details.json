@@ -1831,7 +1831,7 @@
     "manifest": {
       "manifest_version": 2,
       "id": "xinxinxin0.bilibili-video-sender",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "name": "麦麦发 B 站视频",
       "description": "让麦麦解析 B 站视频链接并发送，群聊私聊都可用",
       "author": {
@@ -3052,7 +3052,7 @@
     "id": "custom_commands_plugin",
     "manifest": {
       "manifest_version": 2,
-      "version": "2.2.3",
+      "version": "2.2.5",
       "name": "自定义命令插件 | CustomCommands Plugin",
       "description": "一个允许你通过聊天命令动态添加、删除、列出和触发自定义回复的强大插件，支持群组数据隔离与自定义分组映射。",
       "author": {
@@ -3079,7 +3079,8 @@
         "send.text",
         "send.image",
         "config.get",
-        "api.call"
+        "api.call",
+        "component.reload_plugin"
       ],
       "i18n": {
         "default_locale": "zh-CN",
