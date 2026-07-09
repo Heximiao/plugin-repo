@@ -194,37 +194,6 @@
     }
   },
   {
-    "id": "A0000Xz.MaiBot-Tarots-Plugin",
-    "manifest": {
-      "manifest_version": 1,
-      "name": "塔罗牌插件",
-      "version": "1.4.6",
-      "description": "提供了抽塔罗牌占卜功能，具有模拟人类的调用方式和独特自定义风格的解牌回复。牌面为B站幻星集",
-      "author": {
-        "name": "A肆零西烛",
-        "url": "https://github.com/A0000Xz"
-      },
-      "license": "AGPL-v3.0",
-      "host_application": {
-        "min_version": "0.9.1",
-        "max_version": "0.11.1"
-      },
-      "keywords": [
-        "tarot",
-        "divination",
-        "moderation",
-        "bilibili"
-      ],
-      "categories": [
-        "Moderation",
-        "Entertainment-oriented divination"
-      ],
-      "repository_url": "https://github.com/A0000Xz/MaiBot-Tarots-Plugin",
-      "default_locale": "zh-CN",
-      "locales_path": "_locales"
-    }
-  },
-  {
     "id": "ShiinaWhite.MaiBot-Roulette-Plugin",
     "manifest": {
       "manifest_version": 1,
@@ -255,71 +224,6 @@
       "repository_url": "https://github.com/ShiinaWhite/MaiBot-Roulette-Plugins",
       "default_locale": "zh-CN",
       "locales_path": "_locales"
-    }
-  },
-  {
-    "id": "Schxar.MaiBot-DoubaoSearch-Plugin",
-    "manifest": {
-      "manifest_version": 1,
-      "name": "豆包搜索插件 (Doubao Search Plugin)",
-      "version": "1.0.0",
-      "description": "基于火山引擎豆包模型的AI搜索插件，支持智能LLM判定和高效搜索功能。",
-      "author": {
-        "name": "Schxar",
-        "url": "https://github.com/schxar/doubao_search_plugin"
-      },
-      "license": "GPL-v3.0-or-later",
-      "host_application": {
-        "min_version": "0.11.0",
-        "max_version": "0.11.0"
-      },
-      "homepage_url": "https://github.com/schxar/doubao_search_plugin",
-      "repository_url": "https://github.com/schxar/doubao_search_plugin",
-      "keywords": [
-        "ai",
-        "search",
-        "doubao",
-        "volcengine",
-        "query"
-      ],
-      "categories": [
-        "AI Tools",
-        "Search",
-        "Content Retrieval"
-      ],
-      "default_locale": "zh-CN",
-      "locales_path": "_locales",
-      "plugin_info": {
-        "is_built_in": true,
-        "plugin_type": "content_retrieval",
-        "api_dependencies": [
-          "volcengine"
-        ],
-        "components": [
-          {
-            "type": "action",
-            "name": "doubao_search_action",
-            "description": "根据描述使用火山引擎豆包API生成搜索结果",
-            "activation_modes": [
-              "llm_judge",
-              "keyword"
-            ],
-            "keywords": [
-              "搜索",
-              "查询",
-              "查找",
-              "search",
-              "find"
-            ]
-          }
-        ],
-        "features": [
-          "智能LLM判定生成时机",
-          "高效AI搜索功能",
-          "结果缓存机制",
-          "完整的错误处理"
-        ]
-      }
     }
   },
   {
@@ -380,95 +284,6 @@
       "host_application": {
         "min_version": "0.7.0",
         "max_version": "0.7.9"
-      }
-    }
-  },
-  {
-    "id": "TT-P607.MaiMbot-Pixiv-Setu-Plugin",
-    "manifest": {
-      "manifest_version": 1,
-      "name": "pixiv_setu_plugin",
-      "version": "1.0.0",
-      "description": "根据关键词或随机从Lolicon API获取P站图片",
-      "author": {
-        "name": "言柒和他的师傅一闪^ω^",
-        "url": "https://github.com/tt-P607"
-      },
-      "homepage_url": "https://github.com/tt-P607/MaiMbot-Pixiv-Setu-Plugin",
-      "repository_url": "https://github.com/tt-P607/MaiMbot-Pixiv-Setu-Plugin",
-      "license": "MIT",
-      "host_application": {
-        "min_version": "0.8.0",
-        "max_version": "0.8.0"
-      },
-      "keywords": [
-        "pixiv",
-        "setu",
-        "图片",
-        "Lolicon API"
-      ],
-      "categories": [
-        "娱乐",
-        "图片",
-        "API"
-      ],
-      "config_file_name": "config.toml",
-      "config_section_descriptions": {
-        "plugin": "插件基本配置",
-        "components": "组件启用控制",
-        "cache": "缓存相关配置",
-        "logging": "日志记录配置"
-      },
-      "config_schema": {
-        "plugin": {
-          "config_version": {
-            "type": "str",
-            "default": "1.0.0",
-            "description": "插件配置文件版本号"
-          },
-          "enabled": {
-            "type": "bool",
-            "default": true,
-            "description": "是否启用插件"
-          }
-        },
-        "components": {
-          "enable_pixiv_setu": {
-            "type": "bool",
-            "default": true,
-            "description": "是否启用P站发图功能"
-          }
-        },
-        "cache": {
-          "expire_seconds": {
-            "type": "int",
-            "default": 7200,
-            "description": "缓存有效期(秒)"
-          },
-          "max_image_size": {
-            "type": "int",
-            "default": 1048576,
-            "description": "图片最大字节数(默认1MB)"
-          }
-        },
-        "logging": {
-          "level": {
-            "type": "str",
-            "default": "INFO",
-            "description": "日志级别",
-            "choices": [
-              "DEBUG",
-              "INFO",
-              "WARNING",
-              "ERROR"
-            ]
-          },
-          "prefix": {
-            "type": "str",
-            "default": "[PixivSetu]",
-            "description": "日志前缀"
-          }
-        }
       }
     }
   },
@@ -1880,46 +1695,6 @@
             "type": "command",
             "name": "HaiTurtleSoupCommand",
             "description": "处理 /hgt 命令，生成海龟汤题目或进行游戏互动。用法: /hgt [问题|提示|整理线索|猜谜|退出|帮助|汤面|揭秘]"
-          }
-        ]
-      }
-    }
-  },
-  {
-    "id": "Windpicker-owo.maibot-screen-monitor-plugin",
-    "manifest": {
-      "manifest_version": 1,
-      "name": "screen_monitor_plugin",
-      "version": "1.0.0",
-      "description": "让麦麦视奸你",
-      "author": {
-        "name": "Windpicker_owo",
-        "url": "https://github.com/your-username"
-      },
-      "license": "MIT",
-      "host_application": {
-        "min_version": "0.10.1",
-        "max_version": "0.10.2"
-      },
-      "homepage_url": "https://github.com/Windpicker-owo",
-      "repository_url": "https://github.com/Windpicker-owo/maibot-screen-monitor-plugin",
-      "keywords": [
-        "screen",
-        "monitor"
-      ],
-      "categories": [
-        "Monitor"
-      ],
-      "default_locale": "zh-CN",
-      "locales_path": "_locales",
-      "plugin_info": {
-        "is_built_in": false,
-        "plugin_type": "general",
-        "components": [
-          {
-            "type": "tool",
-            "name": "screen_monitor",
-            "description": "定期截图分析用户屏幕变化"
           }
         ]
       }
